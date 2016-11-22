@@ -49,4 +49,4 @@ preds = model.predict_classes(X_test, verbose=2)
 def write_preds(preds, fname):
     pd.DataFrame({"ImageId": list(range(1,len(preds)+1)), "Label": preds}).to_csv(fname, index=False, header=True)
 
-write_preds(preds, "ok.csv")
+write_preds(preds, "sub.csv")
